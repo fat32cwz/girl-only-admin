@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>商户订单列表</title>   
+        <!-- Bootstrap -->
+        <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <!--你自己的样式文件 -->
+        <link href="data.css" rel="stylesheet">        
+        <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1 style="text-align: center;">商户订单列表</h1>
+        <h2  style="text-align: center;" id="shopName">shopName</h2>
+        <a href="index.html" class="btn btn-default back">返回</a>
+        <div class="goods-header text-center">
+            <div class="header">
+                <ul class="nav nav-tabs">
+                    <li><a href="##" class="active" id="onsale" data-tab="1">现货款可转账</a></li>
+                    <li><a href="##" id="reserving" data-tab="2">定金可转账</a></li>
+                    <li><a href="##" id="final" data-tab="3">尾款可转账</a></li>
+                </ul>
+            </div>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>订单号</th>    
+                    <th>商品名称</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>实收款(元)</th>
+                    <th>订单生成时间</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="data.js"></script> 
+    </body>
+</html>

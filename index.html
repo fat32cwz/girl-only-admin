@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>管理员主页</title>   
+        <!-- Bootstrap -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <!--你自己的样式文件 -->
+        <link href="" rel="stylesheet">        
+        <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+			th{
+				text-align: center;
+			}
+			td{
+				text-align: center;
+			}
+
+            #plfh,#cancel,.text-center{
+                display: inline-block;
+            }
+
+            .text-center>.pagination{
+                margin-bottom: -13px;
+                margin-left: 400px;
+            }
+
+            /* 分页导航样式 */
+
+            .pagination>a,.pagination>span{
+                position: relative;
+                float: left;
+                padding: 6px 12px;
+                line-height: 1.42857143;
+                color: #c2aaa8;
+                text-decoration: none;
+                background-color: #ffe4e9;
+                border: none;
+                margin:0px 2px;
+            }
+
+            .pagination>a,.pagination>span,.pagination>input{
+                float: left;
+            }
+
+
+
+            .pagination>li>a{
+                background-color: #ffe4e9;
+                color: #c2aaa8;
+                border:none;
+                margin:0px 2px;
+            }
+
+            .pagination>.active{
+                background-color: #1a7bff;
+                color: #FFF;
+            }
+
+
+            .pagination>.active:link{
+                background-color: #1a7bff;
+                color: #FFF;
+            }
+
+            .pagination>.active:visited{
+                background-color: #1a7bff;
+                color: #FFF;
+            }
+
+            .pagination>.active:hover{
+                background-color: #1a7bff;
+                color: #FFF;
+            }
+
+            .pagination>.active:active{
+                background-color: #1a7bff;
+                color: #FFF;
+            }
+
+            .pagination>a:link{
+                background-color: #ffe4e9;
+                color: #c2aaa8;
+            }
+
+            .pagination>a:visited{
+                background-color: #ffe4e9;
+                color: #c2aaa8;
+            }
+
+            .pagination>a:hover{
+                background-color: #1a7bff;
+                color: #FFF;
+            }
+
+            .pagination>a:active{
+                background-color: #ffe4e9;
+                color: #c2aaa8;
+            }
+
+            .pagination>a:focus{
+                background-color: #ffe4e9;
+                color: #c2aaa8;
+            }
+
+            .jump-ipt{
+                width: 50px;
+                padding: 4px 12px;
+                color: #c2aaa8;
+            }
+
+            /* 分页导航样式 */
+        </style>
+    </head>
+    <body>
+    	<h1 style="text-align: center;">商家列表</h1>
+    	<table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="cb"></th>
+                    <th class="order-no">商家名称</th>
+                    <th>商家编号</th>
+                    <th>支付宝账号</th>
+                    <th>授权状态</th>
+                </tr>
+            </thead>
+            <tbody>
+            	<tr>
+			      <td>Tanmay</td>
+			      <td>Bangalore</td>
+			      <td>Bangalore</td>
+                  <td>Bangalore</td>
+                  <td>Bangalore</td>
+			    </tr>
+            </tbody>
+        </table>
+        <div class="checkbox"  id="allSelect">
+	        <label class="unselectable" onselectstart="return false" style="margin-left:4.7%;">
+	            <input type="checkbox" value="" class="checkbox">全部选择
+	        </label>
+	        <button class="btn  btn-default" type="button" id="plfh" style="margin-left: 20px;">授权</button>
+            <button class="btn  btn-default" type="button" id="cancel" style="margin-left: 20px;">取消授权</button>
+             <div class="text-center">
+                <!-- <ul class="pagination pagination">
+                  <li><a href="#">上一页</a></li>
+                  <li class="active"><a href="" class="disableLink">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="javascript:void(0);" class="disableLink">...</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">下一页</a></li>
+                  <li><a href="#">第&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                </ul> -->
+            </div>
+	    </div>
+        <br>
+        <a href="enter.html" class="btn btn-default back">返回</a>
+
+	        
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="jquery-3.1.1.min.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="bootstrap.min.js"></script>
+        <!-- pagination.js -->
+        <script src="jquery.pagination.js"></script> 
+        <script src="index.js"></script> 
+    </body>
+</html>

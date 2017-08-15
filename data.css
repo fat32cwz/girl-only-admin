@@ -1,0 +1,25 @@
+.back{
+	position: absolute;
+	right: 40px;
+	top: 40px;
+}
+
+.header{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.active{
+	background-color: #333333;
+	color: #FFF;
+}
+
+.nav-tabs>li>a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.nav-tabs>li>a:focus{
+	background-color: #333333;
+	color: #FFF;
+}
