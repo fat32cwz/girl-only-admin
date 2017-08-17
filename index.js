@@ -112,6 +112,7 @@ function batchDeliver() {                                 //批量授权
 				success:function (resp) {
 					if (resp.message=="success") {
 						alert("授权成功！");
+						loadShopList(1);
 					}
 					else{
 						alert("授权失败！"+resp.message);
@@ -140,6 +141,7 @@ function batchCancel() {                                 //批量取消授权
 				success:function (resp) {
 					if (resp.message=="success") {
 						alert("取消授权成功！");
+						loadShopList(1);
 					}
 					else{
 						alert("取消授权失败！"+resp.message);
