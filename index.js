@@ -23,7 +23,7 @@ $(function () {
 function loadShopList(pages_now) {
 	$("tbody").html('');
 	sessionStorage.shopslist_pages_now = pages_now;
-	var url = "http://server.shaonvonly.com/api/admin/shops";
+	var url = "https://server.shaonvonly.com/api/admin/shops";
 	$.ajax({
 			url: url,
 	       	type:"GET",   	
@@ -107,7 +107,7 @@ function batchDeliver() {                                 //批量授权
 			name = $(checkedArray[i]).parent().next().text();
 			console.log(id);
 			$.ajax({
-				url: "http://server.shaonvonly.com/api/admin/shops/"+id+"/authentication",
+				url: "https://server.shaonvonly.com/api/admin/shops/"+id+"/authentication",
 				type:"PATCH",
 				success:function (resp) {
 					if (resp.message=="success") {
@@ -136,7 +136,7 @@ function batchCancel() {                                 //批量取消授权
 			name = $(checkedArray[i]).parent().next().text();
 			console.log(id);
 			$.ajax({
-				url: "http://server.shaonvonly.com/api/admin/shops/"+id+"/authentication_withdrawal",
+				url: "https://server.shaonvonly.com/api/admin/shops/"+id+"/authentication_withdrawal",
 				type:"PATCH",
 				success:function (resp) {
 					if (resp.message=="success") {

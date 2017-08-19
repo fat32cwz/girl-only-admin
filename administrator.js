@@ -11,7 +11,7 @@ $(function () {
 		username = $("#username").val();
 		password_hash = $.md5($("#password").val()).toUpperCase();
 		$.ajax({
-            url: "http://server.shaonvonly.com/api/admin/login",
+            url: "https://server.shaonvonly.com/api/admin/login",
             type:"POST",
             data:{
 		         username : username,

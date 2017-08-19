@@ -54,7 +54,7 @@ function tabChange() {
 function showOnsaleGoods(pages_now) {
 	$("tbody").html('');
 	sessionStorage.pages_now = pages_now;
-	var url = "http://server.shaonvonly.com/api/admin/shops/"+sessionStorage.shopId_now+"/orders/full_transfer";
+	var url = "https://server.shaonvonly.com/api/admin/shops/"+sessionStorage.shopId_now+"/orders/full_transfer";
 	$.ajax({
 		url: url,
        	type:"GET",
@@ -111,7 +111,7 @@ function showOnsaleGoods(pages_now) {
 function showReservingGoods(pages_now) {
 	$("tbody").html('');
 	sessionStorage.pages_now = pages_now;
-	var url = "http://server.shaonvonly.com/api/admin/shops/"+sessionStorage.shopId_now+"/orders/deposit_transfer";
+	var url = "https://server.shaonvonly.com/api/admin/shops/"+sessionStorage.shopId_now+"/orders/deposit_transfer";
 	$.ajax({
 		url: url,
        	type:"GET",
@@ -168,7 +168,7 @@ function showReservingGoods(pages_now) {
 function showFinalGoods(pages_now) {
 	$("tbody").html('');
 	sessionStorage.pages_now = pages_now;
-	var url = "http://server.shaonvonly.com/api/admin/shops/"+sessionStorage.shopId_now+"/orders/remain_transfer";
+	var url = "https://server.shaonvonly.com/api/admin/shops/"+sessionStorage.shopId_now+"/orders/remain_transfer";
 	$.ajax({
 		url: url,
        	type:"GET",
