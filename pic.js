@@ -111,7 +111,7 @@ function uploadStart(){                      //上传轮播图
 		for (var i = 0; i < files.length; i++) {
             data.append('pic',files[i]);
         }
-		url = "https://server.shaonvonly.com/api/admin/promotions";
+		url = "http://server.shaonvonly.com/api/admin/promotions";
 		$.ajax({
 			url: url,
 	       	type:"POST",
